@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <style>
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+        
+        html {
+            font-size: 100%;
+        }
+        
+        body {
+            font-family: acumin-pro, system-ui, sans-serif;
+            margin: 0;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            font-size: 14px;
+            background-color: #81b0c5;
+            align-items: start;
+            min-height: 100vh;
+        }
+        
+        .footer {
+            display: flex;
+            flex-flow: row wrap;
+            padding: 30px 30px 20px 30px;
+            color: #2f2f2f;
+            background-color: #351616;
+            border-top: 1px solid #e5e5e5;
+        }
+        
+        .footer>* {
+            flex: 1 100%;
+        }
+        
+        .footer__addr {
+            margin-right: 1.25em;
+            margin-bottom: 2em;
+        }
+        
+        .footer__logo {
+            font-family: 'Pacifico', cursive;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #0987FE;
+            font-size: 30px;
+        }
+        
+        .footer__addr h2 {
+            margin-top: 1.3em;
+            font-size: 15px;
+            font-weight: 400;
+            color: #0987FE;
+        }
+        
+        .nav__title {
+            font-weight: 400;
+            font-size: 15px;
+        }
+        
+        .footer address {
+            font-style: normal;
+            color: #999;
+        }
+        
+        .footer ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .footer li {
+            line-height: 2em;
+        }
+        
+        .footer a {
+            text-decoration: none;
+        }
+        
+        .footer__nav {
+            display: flex;
+            flex-flow: row wrap;
+        }
+        
+        .footer__nav>* {
+            flex: 1 50%;
+            margin-right: 1.25em;
+        }
+        
+        .nav__ul a {
+            color: #fff;
+        }
+        
+        .nav__ul--extra {
+            column-count: 2;
+            column-gap: 1.25em;
+        }
+        
+        .legal {
+            display: flex;
+            flex-wrap: wrap;
+            color: #ffffff;
+        }
+        
+        .legal__links {
+            display: flex;
+            align-items: center;
+        }
+        
+        .heart {
+            color: #0987FE;
+        }
+        
+        @media screen and (min-width: 24.375em) {
+            .legal .legal__links {
+                margin-left: auto;
+            }
+        }
+        
+        @media screen and (min-width: 40.375em) {
+            .footer__nav>* {
+                flex: 1;
+            }
+            .nav__item--extra {
+                flex-grow: 2;
+            }
+            .footer__addr {
+                flex: 1 0px;
+            }
+            .footer__nav {
+                flex: 2 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <footer class="footer">
+        <div class="footer__addr">
+            <h1 class="footer__logo"><b>UIET KURUKSHETRA</b></h1>
+
+            <h2 style="margin-left: 10px; color:#fff; font-size:20px">Contact</h2>
+            <p style="margin-left: 10px; color:#fff">Room No:225, UIET Building, Kurukshetra University</p>
+
+            <div class="one d-flex flex-row ">
+                <a href="" target="_blank"><i class="fab fa-facebook-f m-2"></i></a>
+                <a href="" target="_blank"><i class="fab fa-twitter m-2"></i></a>
+                <a href="" target="_blank"><i class="fab fa-instagram m-2"></i></a>
+                <a href="" target="_blank"><i class="fab fa-linkedin m-2"></i></a>
+                <a href="" target="_blank"><i class="fab fa-youtube m-2"></i></a>
+            </div>
+            <div class="two d-flex flex-row" style="padding: 10px">
+                <a href="mailto:urani2015@kuk.ac.in" style="margin-right: 10px"><i class="fas fa-envelope"></i>aaa@kuk.ac.in</a>
+                <a href="tel:+919466271317"><i class="fas fa-phone"></i>+91-XXXXX</a>
+            </div>
+        </div>
+
+        <ul class="footer__nav">
+                    <li class="nav__item">
+                <h2 class="nav__title" style="color: #0987FE; font-size:20px"><b>Get Involved</b></h2>
+                <h2 class="nav__title" style="color: #0987FE; font-size:20px"><b>  <a href="index.html" target="_blank"> Home</a></b></h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="nss.html" target="_blank">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#faculty1" target="_blank">EVENTS</a>
+                    </li>
+                   
+                    <li>
+                        <a href="registration.html" target="_blank">Chapters</a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li class="nav__item nav__item--extra">
+                <h2 class="nav__title" style="color: #0987FE; font-size:20px"><b>Others</h2></b></h2>
+
+                <ul class="nav__ul nav__ul--extra">
+                    <li>
+                        <a href="donate.html" target="_blank">JOBS</a>
+                    </li>
+
+                    <li>
+                        <a href="gallery.html" target="_blank">Groups</a>
+                    </li>
+
+                    <li>
+                        <a href="think.html" target="_blank">login</a>
+                    </li>
+
+                   
+
+                    <li>
+                        <a href="event.html" target="_blank">Chapters</a>
+                    </li>
+                </ul>
+            </li>
+
+
+        </ul>
+
+        <div class="legal">
+            <p>Copyright &copy; All Rights Reserved ||  UIET KUK Team</p>
+            
+
+            <div class="legal__links">
+                <span style="text-align: center;" >Although sufficient and continuous efforts are being made to keep the information on this website up-to-date, however, it should in no way be quoted as an authentic source of information. In case any dispute or conflict, the printed and signed notices of the University will prevail.</span>
+            
+            </div>
+        </div>
+    </footer>
+
+    
+  
+ 
+</body>
+
+</html>
